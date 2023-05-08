@@ -1,0 +1,54 @@
+:root {
+    --navi-blue: #0f1626;
+    --leather: #ab987a;
+    --green: #22b455;
+    --coral: #ff533d;
+    --eggshell: #f5f5f5;
+}
+.container_about {
+    margin-top: 4rem;
+}
+.floating-img {
+    animation: float 6s ease-in-out infinite;
+}
+
+.div_info_about p,
+h2 {
+    color: var(--navi-blue);
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 20px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.div_info_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* ---- media query----- */
+
+/* Estilos para versión de tablet */
+@media (max-width: 768px) {
+    .div_info_about {
+        padding: 2rem;
+        gap: 1rem;
+    }
+}
+
+/* syles modal */
+
+.modal-color .modal-content {
+    background-color: var(--navi-blue);
+    color: var(--eggshell);
+}

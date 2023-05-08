@@ -1,0 +1,114 @@
+:root {
+    --navi-blue: #0f1626;
+    --leather: #ab987a;
+    --green: #22b455;
+    --coral: #ff533d;
+    --eggshell: #f5f5f5;
+}
+
+.consultancy-container {
+    background-color: var(--navi-blue);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.consultancy-title {
+    color: var(--eggshell);
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.consultancy-description {
+    color: var(--eggshell);
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.consultancy-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.consultancy-item {
+    color: var(--eggshell);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.consultancy-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    color: var(--green);
+}
+.consultancy-button-container {
+    text-align: center;
+}
+
+.consultancy-button {
+    background-color: var(--green);
+    color: var(--eggshell);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.consultancy-button:hover {
+    background-color: var(--leather);
+    color: var(--navi-blue);
+}
+
+.consultancy-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--leather);
+}
+/* -- modal form -- */
+
+.modal_body {
+    padding: 2rem;
+    background-color: var(--navi-blue);
+    color: var(--eggshell);
+}
+.bt_contact {
+    display: flex;
+    justify-content: center;
+}
+.modal-header .close {
+    color: #fff;
+}
+.mi-clase-datepicker {
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(173, 41, 41);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .consultancy-title {
+        font-size: 20px;
+    }
+
+    .consultancy-description {
+        font-size: 14px;
+    }
+
+    .consultancy-item {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .consultancy-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+    }
+}
