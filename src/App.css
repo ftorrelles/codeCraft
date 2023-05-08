@@ -32,10 +32,6 @@ img {
     background-color: transparent;
     transition: background-color 0.5s ease;
 }
-.navBar h2,
-p {
-    color: var(--eggshell);
-}
 
 .navbar-fixed-top {
     position: fixed;
@@ -79,6 +75,15 @@ p {
     to {
         transform: translateY(-10px);
     }
+}
+
+/* --cinta gallery-- */
+.photo-gallery-container {
+    padding: 3rem;
+}
+.slider-wrapper {
+    max-width: 100%;
+    overflow: hidden;
 }
 
 /* -- contact -- */
@@ -210,6 +215,9 @@ textarea {
 }
 /* Estilos para versión de tablet */
 @media (max-width: 768px) {
+    .photo-gallery-container {
+        padding: 1rem;
+    }
     .col_contactInfo {
         width: 95%;
         border-right: none;

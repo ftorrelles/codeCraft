@@ -4,7 +4,7 @@ const ModalMision = ({ showMision, handleCloseMision }) => {
     return (
         <>
             <Modal
-                className="modal-lg"
+                className="modal-lg modal-color"
                 show={showMision}
                 onHide={handleCloseMision}
             >
@@ -12,7 +12,7 @@ const ModalMision = ({ showMision, handleCloseMision }) => {
                     <Modal.Title>Mision</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p style={{ color: "black" }}>
+                    <p>
                         En codeCraft nuestra misión es brindar soluciones de
                         software de alta calidad y servicios de desarrollo web
                         que satisfagan las necesidades únicas de nuestros

@@ -52,3 +52,6 @@ h2 {
     background-color: var(--navi-blue);
     color: var(--eggshell);
 }
+.modal-color .modal-header .btn-close {
+    background-color: white;
+}
