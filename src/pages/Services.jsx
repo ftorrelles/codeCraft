@@ -20,6 +20,12 @@ const Services = () => {
     }, []);
     return (
         <>
+            <div
+                style={{
+                    height: "80px",
+                    backgroundColor: "#0f1626",
+                }}
+            ></div>
             <section className="services">
                 <div>
                     <h3>Nuestros servicios</h3>

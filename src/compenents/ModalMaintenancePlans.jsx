@@ -8,7 +8,7 @@ const ModalMaintenancePlans = ({
     return (
         <>
             <Modal
-                className="modal-lg"
+                className="modal-lg modal-color"
                 show={showMaintenancePlans}
                 onHide={handleCloseMaintenancePlans}
             >
@@ -18,7 +18,7 @@ const ModalMaintenancePlans = ({
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p style={{ color: "black" }}>
+                    <p>
                         1. Mantenimiento Basico <br /> <br /> 2. Mantenimiento
                         dinamico <br />
                         <br />

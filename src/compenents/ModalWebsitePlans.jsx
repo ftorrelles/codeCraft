@@ -5,7 +5,7 @@ const ModalWebsitePlans = ({ showWebsitePlans, handleCloseWebsitePlans }) => {
     return (
         <>
             <Modal
-                className="modal-lg"
+                className="modal-lg modal-color"
                 show={showWebsitePlans}
                 onHide={handleCloseWebsitePlans}
             >
@@ -13,7 +13,7 @@ const ModalWebsitePlans = ({ showWebsitePlans, handleCloseWebsitePlans }) => {
                     <Modal.Title>Sitios web soñados</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p style={{ color: "black" }}>
+                    <p>
                         1. Paquete basico (Plantillas) <br /> <br /> 2. Paquete
                         tetris (Tus escoges el modelo de las secciones para tu
                         pagina) <br />

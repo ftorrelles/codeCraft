@@ -1,20 +1,21 @@
 import "../styles/home.css";
 import Carousel from "react-bootstrap/Carousel";
-import About from "./About";
-import WhyUs from "./WhyUs";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Portfolio from "./Portfolio";
 import Consultancy from "../compenents/Consultancy";
+import ContentAbout from "../compenents/ContentAbout";
+import ContentWhyUs from "../compenents/ContentWhyUs";
 
 const Home = () => {
     return (
         <>
             <section className="home">
-                <Carousel indicators={false} interval={7000}>
+                <Carousel fade indicators={false} interval={7000}>
                     <Carousel.Item>
                         <picture>
                             <source
                                 media="(min-width: 992px)"
-                                srcSet="/4.png"
+                                srcSet="/4-2.png"
                             />
                             <source
                                 media="(max-width: 991px)"
@@ -22,7 +23,7 @@ const Home = () => {
                             />
                             <img
                                 className="d-block w-100"
-                                src="/4.png"
+                                src="/4-2.png"
                                 alt="first slide"
                             />
                         </picture>
@@ -41,7 +42,7 @@ const Home = () => {
                         <picture>
                             <source
                                 media="(min-width: 992px)"
-                                srcSet="/3.png"
+                                srcSet="/3-2.png"
                             />
                             <source
                                 media="(max-width: 991px)"
@@ -49,7 +50,7 @@ const Home = () => {
                             />
                             <img
                                 className="d-block w-100"
-                                src="/3.png"
+                                src="/3-2.png"
                                 alt="Second slide"
                             />
                         </picture>
@@ -65,8 +66,8 @@ const Home = () => {
                 </Carousel>
             </section>
 
-            <About />
-            <WhyUs />
+            <ContentAbout />
+            <ContentWhyUs />
             <Consultancy />
             <Portfolio />
         </>

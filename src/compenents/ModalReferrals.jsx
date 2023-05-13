@@ -5,7 +5,7 @@ const ModalReferrals = ({ showReferrals, handleCloseReferrals }) => {
     return (
         <>
             <Modal
-                className="modal-lg"
+                className="modal-lg modal-color"
                 show={showReferrals}
                 onHide={handleCloseReferrals}
             >
@@ -13,7 +13,7 @@ const ModalReferrals = ({ showReferrals, handleCloseReferrals }) => {
                     <Modal.Title>Bonos de referidos</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p style={{ color: "black" }}>
+                    <p>
                         1. Descuentos en la creación de tu sitio web. <br />
                         <br />
                         2. Descuentos en tu plan de matenimiento.

@@ -5,7 +5,7 @@ const ModalWarranty = ({ showWarranty, handleCloseWarranty }) => {
     return (
         <>
             <Modal
-                className="modal-lg"
+                className="modal-lg modal-color"
                 show={showWarranty}
                 onHide={handleCloseWarranty}
             >
@@ -13,7 +13,7 @@ const ModalWarranty = ({ showWarranty, handleCloseWarranty }) => {
                     <Modal.Title>Garantía de satisfacción</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p style={{ color: "black" }}>
+                    <p>
                         1. Si no estás satisfecho con el resultado final,
                         trabajaremos contigo para hacer las correcciones
                         necesarias y asegurar tu satisfacción. <br />

@@ -4,9 +4,8 @@ import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
-const localizer = momentLocalizer(moment);
-
 const ModalConsultancy = ({ show, handleClose }) => {
+    const [appointments, setAppointments] = useState([]);
     const [selectedSlot, setSelectedSlot] = useState(null);
     const [events, setEvents] = useState([]);
     const [formData, setFormData] = useState({
@@ -14,6 +13,8 @@ const ModalConsultancy = ({ show, handleClose }) => {
         email: "",
         phone: "",
     });
+
+    const localizer = momentLocalizer(moment);
 
     const handleSelect = (slotInfo) => {
         setSelectedSlot(slotInfo);
@@ -27,23 +28,31 @@ const ModalConsultancy = ({ show, handleClose }) => {
     const handleFormSubmit = (event) => {
         event.preventDefault();
         const { start, end } = selectedSlot;
-        const newEvent = {
+        const newAppointment = {
             start,
             end,
-            title: formData.name || "No disponible", // Establece el título del evento en "No disponible" si no se ha ingresado un nombre
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
         };
-        setEvents([...events, newEvent]);
+        setAppointments([...appointments, newAppointment]);
         setSelectedSlot(null);
+        setEvents([...events, newAppointment]);
         setFormData({ name: "", email: "", phone: "" });
     };
 
-    const titleAccessor = (event) => {
-        if (event.title === "No disponible") {
-            return event.title;
-        }
-        return moment(event.start).format("HH:mm"); // Muestra la hora del evento si el título no es "No disponible"
+    const eventStyleGetter = (event) => {
+        const style = {
+            backgroundColor:
+                event.title === "No disponible" ? "#dddddd" : "#3174ad",
+            color: "#ffffff",
+        };
+        return {
+            style,
+        };
     };
-    console.log(formData);
+
+    console.log(appointments);
 
     return (
         <Modal show={show} onHide={handleClose} size="lg">
@@ -60,7 +69,7 @@ const ModalConsultancy = ({ show, handleClose }) => {
                     min={new Date(0, 0, 0, 14, 0)}
                     max={new Date(0, 0, 0, 17, 0)}
                     onSelectSlot={handleSelect}
-                    titleAccessor={titleAccessor} // Utiliza la función titleAccessor para establecer el título de los eventos
+                    eventPropGetter={eventStyleGetter}
                 />
                 {selectedSlot && (
                     <Form onSubmit={handleFormSubmit}>
@@ -100,16 +109,11 @@ const ModalConsultancy = ({ show, handleClose }) => {
                         </Form.Group>
 
                         <Button variant="primary" type="submit">
-                            Confirmar cita
+                            Enviar
                         </Button>
                     </Form>
                 )}
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Cerrar
-                </Button>
-            </Modal.Footer>
         </Modal>
     );
 };

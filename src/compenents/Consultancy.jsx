@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/consultancy.css";
-import ModalConsultancy from "./ModalConsultancy";
+// import ModalConsultancy from "./ModalConsultancy";
+import ModalConsultancy2 from "./ModalConsultancy2";
 
 const Consultancy = () => {
     //modal
@@ -19,8 +20,8 @@ const Consultancy = () => {
                     <li className="consultancy-item">
                         <i className="bx bx-check consultancy-icon"></i>
                         <span>
-                            Selecciona La Fecha: Aparta la fecha que mejor se
-                            adapte.
+                            Selecciona La Fecha y hora: llena el formulario
+                            seleccionando la fecha y hora.
                         </span>
                     </li>
                     <li className="consultancy-item">
@@ -57,7 +58,7 @@ const Consultancy = () => {
                     </button>
                 </div>
             </div>
-            <ModalConsultancy show={show} handleClose={handleClose} />
+            <ModalConsultancy2 show={show} handleClose={handleClose} />
         </>
     );
 };
