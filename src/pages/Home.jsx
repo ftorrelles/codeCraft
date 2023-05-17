@@ -5,12 +5,16 @@ import Portfolio from "./Portfolio";
 import Consultancy from "../compenents/Consultancy";
 import ContentAbout from "../compenents/ContentAbout";
 import ContentWhyUs from "../compenents/ContentWhyUs";
+import ContentServices from "../compenents/ContentServices";
+import ContentContact from "../compenents/ContentContact";
 
 const Home = () => {
+    // interval={7000}
+
     return (
         <>
             <section className="home">
-                <Carousel fade indicators={false} interval={7000}>
+                <Carousel indicators={false} fade>
                     <Carousel.Item>
                         <picture>
                             <source
@@ -29,11 +33,10 @@ const Home = () => {
                         </picture>
                         <div className="text-container">
                             <h3>
-                                {" "}
                                 <strong>
                                     Destaca en línea con una página web
-                                    atractiva moderna y al mismo tiempo
-                                    reflejando la esencia se tu marca
+                                    atractiva moderna y que refleje la esencia
+                                    de tu marca
                                 </strong>
                             </h3>
                         </div>
@@ -56,9 +59,8 @@ const Home = () => {
                         </picture>
                         <div className="text-container">
                             <h3>
-                                {" "}
                                 <strong>
-                                    Déjanos transforma tus ideas en realidad.
+                                    Déjanos transformar tus ideas en realidad.
                                 </strong>
                             </h3>
                         </div>
@@ -68,8 +70,11 @@ const Home = () => {
 
             <ContentAbout />
             <ContentWhyUs />
-            <Consultancy />
+            <ContentServices />
+
             <Portfolio />
+            <Consultancy />
+            <ContentContact />
         </>
     );
 };

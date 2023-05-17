@@ -4,18 +4,42 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ContentPortfolio2 = () => {
-    //efecto texto
+    // Efecto texto
     const [hoveredSlide, setHoveredSlide] = useState(null);
-    //efecto carousel
+
+    // Efecto carousel
     const handleSlideHover = (index) => {
         setHoveredSlide(index);
     };
+
+    const projects = [
+        {
+            image: "/Betho.PNG",
+            text: "Texto al colocar el cursor",
+        },
+        {
+            image: "/carrito.PNG",
+            text: "Texto al colocar el cursor",
+        },
+        {
+            image: "/crud products.PNG",
+            text: "Texto al colocar el cursor",
+        },
+        {
+            image: "/Pokedex.PNG",
+            text: "Texto al colocar el cursor",
+        },
+        {
+            image: "/friend.PNG",
+            text: "Texto al colocar el cursor",
+        },
+    ];
 
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -37,79 +61,26 @@ const ContentPortfolio2 = () => {
 
     return (
         <div className="photo-gallery-container">
-            <h2 className="photo-gallery-title">Nuestra galería</h2>
+            <h2 className="photo-gallery-title">
+                Alguno de nuestros proyectos
+            </h2>
             <div className="slider-wrapper">
                 <Slider {...settings}>
-                    <div
-                        className={`photo-gallery-slide ${
-                            hoveredSlide === 0 ? "hovered" : ""
-                        }`}
-                        onMouseEnter={() => handleSlideHover(0)}
-                        onMouseLeave={() => handleSlideHover(null)}
-                    >
-                        {hoveredSlide === 0 ? (
-                            <div className="slide-text">
-                                Texto al colocar el cursor
-                            </div>
-                        ) : null}
-                        <img src="/Betho.PNG" />
-                    </div>
-                    <div
-                        className={`photo-gallery-slide ${
-                            hoveredSlide === 1 ? "hovered" : ""
-                        }`}
-                        onMouseEnter={() => handleSlideHover(1)}
-                        onMouseLeave={() => handleSlideHover(null)}
-                    >
-                        {hoveredSlide === 1 ? (
-                            <div className="slide-text">
-                                Texto al colocar el cursor
-                            </div>
-                        ) : null}
-                        <img src="/carrito.PNG" />
-                    </div>
-                    <div
-                        className={`photo-gallery-slide ${
-                            hoveredSlide === 2 ? "hovered" : ""
-                        }`}
-                        onMouseEnter={() => handleSlideHover(2)}
-                        onMouseLeave={() => handleSlideHover(null)}
-                    >
-                        {hoveredSlide === 2 ? (
-                            <div className="slide-text">
-                                Texto al colocar el cursor
-                            </div>
-                        ) : null}
-                        <img src="/crud products.PNG" />
-                    </div>
-                    <div
-                        className={`photo-gallery-slide ${
-                            hoveredSlide === 3 ? "hovered" : ""
-                        }`}
-                        onMouseEnter={() => handleSlideHover(3)}
-                        onMouseLeave={() => handleSlideHover(null)}
-                    >
-                        {hoveredSlide === 3 ? (
-                            <div className="slide-text">
-                                Texto al colocar el cursor
-                            </div>
-                        ) : null}
-                        <img src="/Pokedex.PNG" />
-                    </div>
-                    <div
-                        className={`photo-gallery-slide ${
-                            hoveredSlide === 4 ? "hovered" : ""
-                        }`}
-                        onMouseEnter={() => handleSlideHover(4)}
-                        onMouseLeave={() => handleSlideHover(null)}
-                    >
-                        {hoveredSlide === 4 ? (
-                            <div className="slide-text">
-                                Texto al colocar el cursor
-                            </div>
-                        ) : null}
-                        <img src="/friend.PNG" />
-                    </div>
+                    {projects.map((project, index) => (
+                        <div
+                            className={`photo-gallery-slide ${
+                                hoveredSlide === index ? "hovered" : ""
+                            }`}
+                            onMouseEnter={() => handleSlideHover(index)}
+                            onMouseLeave={() => handleSlideHover(null)}
+                            key={index}
+                        >
+                            {hoveredSlide === index ? (
+                                <div className="slide-text">{project.text}</div>
+                            ) : null}
+                            <img src={project.image} alt={`Project ${index}`} />
+                        </div>
+                    ))}
                 </Slider>
             </div>
         </div>

@@ -1,0 +1,41 @@
+:root {
+    --navi-blue: #0f1626;
+    --leather: #ab987a;
+    --green: #22b455;
+    --green2: #204829;
+    --coral: #ff533d;
+    --eggshell: #f5f5f5;
+}
+.services_container {
+    background-image: url("/services2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    padding: 3rem 5rem;
+}
+.services_container h3 {
+    color: var(--eggshell);
+    padding: 2rem 0;
+}
+
+.card-style {
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card-style:hover {
+    transform: scale(1.05);
+    background-color: var(--navi-blue);
+    color: var(--eggshell);
+}
+
+/* Estilos para versión de tablet */
+@media (max-width: 768px) {
+    .services_container {
+        padding: 2rem;
+    }
+}
+/* Estilos para versión móvil */
+@media (max-width: 480px) {
+}

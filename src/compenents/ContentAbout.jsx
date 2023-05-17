@@ -1,5 +1,5 @@
 import "../styles/about.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import ModalVision from "./ModalVision";
 import ModalMision from "./ModalMision";
@@ -13,21 +13,6 @@ const ContentAbout = () => {
     const [showMision, setShowMision] = useState(false);
     const handleCloseMision = () => setShowMision(false);
     const handleShowMision = () => setShowMision(true);
-    //img flotante
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setOffset((offset) => offset + 10 * direction);
-            if (offset >= 50) {
-                setDirection(-1);
-            } else if (offset <= -50) {
-                setDirection(1);
-            }
-        }, 6000);
-
-        return () => clearInterval(interval);
-    }, []);
-    const [offset, setOffset] = useState(0);
-    const [direction, setDirection] = useState(1);
     return (
         <>
             <Container className="container_about">
@@ -80,7 +65,6 @@ const ContentAbout = () => {
                                 alt="sobre nosotros"
                                 className="floating-img"
                             />
-                            <div className="img-overlay"></div>
                         </div>
                     </Col>
                 </Row>

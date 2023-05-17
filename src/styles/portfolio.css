@@ -1,4 +1,4 @@
-.Portfolio {
+/* .Portfolio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 5rem;
@@ -63,10 +63,10 @@
 .Portfolio__Project:hover .Portfolio__Project-Description {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 /* ----Media Query---- */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .Portfolio {
         grid-template-columns: repeat(2, 1fr);
         padding: 1rem;
@@ -87,4 +87,4 @@
     .Portfolio {
         grid-template-columns: repeat(1, 1fr);
     }
-}
+} */

@@ -11,11 +11,14 @@ const Consultancy = () => {
     return (
         <>
             <div className="consultancy-container">
+                <br />
                 <h2 className="consultancy-title">Consultoría Gratuita</h2>
+                <br />
                 <p className="consultancy-description">
                     Queremos ayudarte, por ello, te proponemos realizar una
                     consultoría gratuita por videoconferencia.
                 </p>
+                <br />
                 <ul className="consultancy-list">
                     <li className="consultancy-item">
                         <i className="bx bx-check consultancy-icon"></i>
@@ -48,6 +51,7 @@ const Consultancy = () => {
                         </span>
                     </li>
                 </ul>
+                <br />
                 <div className="consultancy-button-container ">
                     <button
                         type="button"

@@ -1,0 +1,113 @@
+:root {
+    --navi-blue: #0f1626;
+    --leather: #ab987a;
+    --green: #22b455;
+    --green2: #204829;
+    --coral: #ff533d;
+    --eggshell: #f5f5f5;
+}
+
+.Portfolio3 {
+    margin-top: 5rem;
+    padding: 3rem 6rem;
+}
+
+.title_portfolio3 {
+    padding: 4rem 2rem 0 4rem;
+}
+
+.title_project3 {
+    color: var(--navi-blue);
+    text-align: center;
+}
+
+.Portfolio__Project3 {
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+    /* background-color: #fafafa; */
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0px 0px 15px #ccc; */
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+.Portfolio__Project-Image3 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Portfolio__Project-Image3 img {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.Portfolio__Project3:hover {
+    transform: scale(1.02);
+    /* box-shadow: 0px 0px 20px #ccc; */
+}
+
+.Portfolio__Project3:hover .Portfolio__Project-Image3 img {
+    transform: scale(1.2);
+    opacity: 0.6;
+}
+
+.Portfolio__Project-Description3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: var(--eggshell);
+    background-color: #0f1626b0;
+    font-weight: bold;
+    margin: 1rem;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.Portfolio__Project3:hover .Portfolio__Project-Description3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ----Media Query---- */
+@media (max-width: 992px) {
+    .Portfolio3 {
+        padding: 1rem;
+    }
+    .title_portfolio {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title_portfolio3 {
+        padding: 1rem;
+    }
+    .Portfolio__Project3 {
+        margin: 0;
+        padding: 0;
+    }
+    .Portfolio__Project-Description3 {
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+}
+
+/* Agregar espacio entre tarjetas */
+/* .Portfolio__Project3 {
+    margin-right: 15px;
+} */

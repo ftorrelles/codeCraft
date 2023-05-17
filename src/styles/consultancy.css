@@ -2,12 +2,14 @@
     --navi-blue: #0f1626;
     --leather: #ab987a;
     --green: #22b455;
+    --green2: #204829;
     --coral: #ff533d;
     --eggshell: #f5f5f5;
 }
 
 .consultancy-container {
-    background-color: var(--navi-blue);
+    background: radial-gradient(circle, #2d7d9c, #0f1626);
+
     padding: 24px;
     border-radius: 8px;
 }
@@ -61,14 +63,10 @@
 }
 
 .consultancy-button:hover {
-    background-color: var(--leather);
-    color: var(--navi-blue);
+    background-color: var(--green2);
+    color: var(--eggshell);
 }
 
-.consultancy-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--leather);
-}
 /* -- modal form -- */
 
 .modal_body {
