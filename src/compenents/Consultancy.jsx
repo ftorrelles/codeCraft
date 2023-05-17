@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../styles/consultancy.css";
-// import ModalConsultancy from "./ModalConsultancy";
 import ModalConsultancy2 from "./ModalConsultancy2";
 
 const Consultancy = () => {

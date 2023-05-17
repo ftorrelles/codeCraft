@@ -1,5 +1,6 @@
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const ModalReferrals = ({ showReferrals, handleCloseReferrals }) => {
     return (
@@ -24,7 +25,13 @@ const ModalReferrals = ({ showReferrals, handleCloseReferrals }) => {
                             justifyContent: "center",
                         }}
                     >
-                        <Button variant="outline-success">Contactanos</Button>
+                        <Button
+                            as={Link}
+                            to="/contact"
+                            variant="outline-success"
+                        >
+                            Contactanos
+                        </Button>
                     </div>
                 </Modal.Body>
             </Modal>

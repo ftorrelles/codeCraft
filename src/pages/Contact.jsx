@@ -1,4 +1,5 @@
 import ContentContact from "../compenents/ContentContact";
+import ContentServices from "../compenents/ContentServices";
 
 const Contacts = () => {
     return (
@@ -10,6 +11,7 @@ const Contacts = () => {
                 }}
             ></div>
             <ContentContact />
+            <ContentServices />
         </>
     );
 };

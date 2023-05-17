@@ -1,3 +1,5 @@
+import ContentContact from "../compenents/ContentContact";
+import ContentPortfolio3 from "../compenents/ContentPortfolio3";
 import ContentServices from "../compenents/ContentServices";
 
 function Services() {
@@ -10,6 +12,8 @@ function Services() {
                 }}
             ></div>
             <ContentServices />
+            <ContentPortfolio3 />
+            <ContentContact />
         </>
     );
 }

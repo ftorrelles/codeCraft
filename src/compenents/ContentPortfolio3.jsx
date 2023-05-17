@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "../styles/portfolio3.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Container } from "react-bootstrap";
 
 const projects = [
     {
@@ -83,38 +84,45 @@ const ContentPortfolio3 = () => {
 
     return (
         <>
-            <h2 className="title_portfolio3">Algunos de nuestros proyectos</h2>
-            <div className="Portfolio3">
-                <Slider {...settings}>
-                    {projects.map((project, index) => (
-                        <div className="Portfolio__Project3" key={index}>
-                            <h3 className="title_project3">{project.title}</h3>
-                            <div className="Portfolio__Project-Image3">
-                                <img
-                                    src={project.image}
-                                    className="active"
-                                    alt=""
-                                />
+            {" "}
+            <Container fluid>
+                <h2 className="title_portfolio3">
+                    Algunos de nuestros proyectos
+                </h2>
+                <div className="Portfolio3">
+                    <Slider {...settings}>
+                        {projects.map((project, index) => (
+                            <div className="Portfolio__Project3" key={index}>
+                                <h3 className="title_project3">
+                                    {project.title}
+                                </h3>
+                                <div className="Portfolio__Project-Image3">
+                                    <img
+                                        src={project.image}
+                                        className="active"
+                                        alt=""
+                                    />
+                                </div>
+                                <div className="Portfolio__Project-Description3">
+                                    <a
+                                        style={{
+                                            textDecoration: "none",
+                                            color: "inherit",
+                                        }}
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <p>{project.description}</p>
+                                        <p>{project.technology}</p>
+                                        <p>{project.available}</p>
+                                    </a>
+                                </div>
                             </div>
-                            <div className="Portfolio__Project-Description3">
-                                <a
-                                    style={{
-                                        textDecoration: "none",
-                                        color: "inherit",
-                                    }}
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <p>{project.description}</p>
-                                    <p>{project.technology}</p>
-                                    <p>{project.available}</p>
-                                </a>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
+                        ))}
+                    </Slider>
+                </div>
+            </Container>
         </>
     );
 };

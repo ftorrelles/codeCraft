@@ -14,26 +14,28 @@ function Footer() {
                             <ul>
                                 <li>
                                     <Link to="/services">
-                                        Estudios Telefonicos
+                                        Páginas web estáticas
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/services">
-                                        Estudios en campo
+                                        Páginas web dinámicas
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/services">
-                                        Prueba de producto
+                                        Páginas web de comercio electrónico
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/services">
-                                        Cliente incognito
+                                        Páginas web de blogs
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/services">Reclutamiento</Link>
+                                    <Link to="/services">
+                                        Páginas web educativas
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -49,18 +51,18 @@ function Footer() {
                         <h3 style={{ textAlign: "center" }}>Redes sociales</h3>
                         <div className="div_icons_contact">
                             <a
-                                href="https://www.linkedin.com/in/biupoll-sas-4971a1273/"
+                                href="https://www.linkedin.com/company/escodecraft/about/"
                                 target="_blank"
                             >
                                 <i className="bx bxl-linkedin"></i>
                             </a>
-                            <a
-                                href="https://api.whatsapp.com/message/LOR4BMDYHZ3GJ1?autoload=1&app_absent=0"
-                                target="_blank"
-                            >
+                            <a href="" target="_blank">
                                 <i className="bx bxl-whatsapp"></i>
                             </a>
-                            <a href="" target="_blank">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=100092651354702"
+                                target="_blank"
+                            >
                                 <i className="bx bxl-facebook-circle"></i>
                             </a>
                         </div>
