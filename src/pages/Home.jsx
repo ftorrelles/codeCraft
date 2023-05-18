@@ -71,7 +71,6 @@ const Home = () => {
             <ContentAbout />
             <ContentWhyUs />
             <ContentServices />
-
             <Portfolio />
             <Consultancy />
             <ContentContact />

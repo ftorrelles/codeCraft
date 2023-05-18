@@ -14,31 +14,32 @@ const ContentContact = () => {
     // };
     // console.log(infoForm);
 
-    const [notification, setNotification] = useState({
-        show: false,
-        variant: "",
-        message: "",
-    });
+    // const [notification, setNotification] = useState({
+    //     show: false,
+    //     variant: "",
+    //     message: "",
+    // });
+    const [notification, setNotification] = useState(null);
 
     const submit = (data) => {
         // setInfoForm(data);
         reset();
         axios
             .post("/emails/contact", data)
-            .then(() =>
+            .then(() => {
                 setNotification({
-                    show: true,
                     variant: "success",
-                    message: "Mensaje enviado!",
-                })
-            )
-            .catch(() =>
+                    message: "Mensaje enviado!! te contactaremos muy pronto",
+                });
+                window.scrollTo(0, 0); // Desplazar la página hacia arriba
+            })
+            .catch(() => {
                 setNotification({
-                    show: true,
                     variant: "danger",
-                    message: "upps hubo un error",
-                })
-            );
+                    message: "¡Ups! Hubo un error.",
+                });
+                window.scrollTo(0, 0); // Desplazar la página hacia arriba
+            });
     };
 
     return (
@@ -173,13 +174,13 @@ const ContentContact = () => {
                         </Col>
                     </Row>
                 </Container>
+                <Notification
+                    variant={notification?.variant}
+                    message={notification?.message}
+                    show={notification !== null}
+                    handleClose={() => setNotification(null)}
+                />
             </section>
-            <Notification
-                {...notification}
-                handleClose={() =>
-                    setNotification({ ...notification, show: false })
-                }
-            />
         </>
     );
 };

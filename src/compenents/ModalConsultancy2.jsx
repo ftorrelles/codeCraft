@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
+import axios from "../utils/axios";
+import Notification from "../compenents/Notification";
+import { animateScroll as scroll } from "react-scroll";
 
 const ModalConsultancy2 = ({ show, handleClose }) => {
-    const [appointments, setAppointments] = useState([]);
+    // const [appointments, setAppointments] = useState([]);
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [date, setDate] = useState("");
     const [errorMessage, setErrorMessage] = useState(""); // Estado para el mensaje de error
+
+    const [notification, setNotification] = useState(null);
+    const [modalClosed, setModalClosed] = useState(false); // Nuevo estado para controlar si el modal se cerró
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,13 +28,32 @@ const ModalConsultancy2 = ({ show, handleClose }) => {
                 );
                 return; // Detiene la ejecución del formulario si la fecha es inválida
             }
-            const newAppointment = {
+            const data = {
                 name: name,
                 phone: phone,
                 email: email,
                 date: date,
             };
-            setAppointments([...appointments, newAppointment]);
+            axios
+                .post("/emails/consulting", data)
+                .then(() => {
+                    setNotification({
+                        variant: "success",
+                        message:
+                            "Mensaje enviado!! te contactaremos muy pronto",
+                    });
+                    setModalClosed(true); // Actualiza el estado para indicar que el modal se cerró
+                    scroll.scrollToTop(); // Desplaza la página hacia arriba
+                })
+                .catch(() => {
+                    setNotification({
+                        variant: "danger",
+                        message: "¡Ups! Hubo un error.",
+                    });
+                    setModalClosed(true); // Actualiza el estado para indicar que el modal se cerró
+                    scroll.scrollToTop(); // Desplaza la página hacia arriba
+                });
+            // setAppointments([...appointments, newAppointment]);
 
             // Resto del código para guardar los datos y reiniciar los valores del formulario
             setName("");
@@ -71,73 +96,100 @@ const ModalConsultancy2 = ({ show, handleClose }) => {
 
         return false;
     };
-    console.log(appointments);
+
+    useEffect(() => {
+        if (modalClosed) {
+            handleClose();
+            // window.scrollTo(0, 0); // Desplazar la página hacia arriba
+            setModalClosed(false);
+        }
+    }, [modalClosed]);
+    // console.log(appointments);
 
     return (
-        <Modal
-            className="modal-color"
-            show={show}
-            onHide={handleClose}
-            size="lg"
-        >
-            <Modal.Header closeButton>
-                <Modal.Title>Mi formulario de citas</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-                <Form onSubmit={handleSubmit}>
-                    <Form.Group>
-                        <Form.Label>Nombre:</Form.Label>
-                        <Form.Control
-                            type="text"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                        />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Teléfono:</Form.Label>
-                        <Form.Control
-                            type="text"
-                            value={phone}
-                            onChange={(e) => setPhone(e.target.value)}
-                            required
-                        />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label>Correo electrónico:</Form.Label>
-                        <Form.Control
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                        />
-                    </Form.Group>
-                    <br />
-                    <hr />
-                    <p>Selecciona la fecha y hora para la videoconferencia</p>
-                    <p>Disponiblidad de lunes a viernes de 2:00 pm a 5:00 pm</p>
-                    <Form.Group>
-                        <Form.Label>Fecha de contacto:</Form.Label>
-                        <Form.Control
-                            type="datetime-local"
-                            value={date}
-                            onChange={handleDateChange}
-                            required
-                        />
-                    </Form.Group>
-                    <br />
-                    {errorMessage && (
-                        <div className="error-message">{errorMessage}</div>
-                    )}{" "}
-                    {/* Mostrar el mensaje de error */}
-                    <div style={{ display: "flex", justifyContent: "center" }}>
-                        <Button variant="outline-success" type="submit">
-                            Enviar
-                        </Button>
-                    </div>
-                </Form>
-            </Modal.Body>
-        </Modal>
+        <>
+            <Modal
+                className="modal-color"
+                show={show}
+                onHide={handleClose}
+                size="lg"
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title>Mi formulario de citas</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form onSubmit={handleSubmit}>
+                        <Form.Group>
+                            <Form.Label>Nombre:</Form.Label>
+                            <Form.Control
+                                type="text"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                required
+                            />
+                        </Form.Group>
+                        <Form.Group>
+                            <Form.Label>Teléfono:</Form.Label>
+                            <Form.Control
+                                type="text"
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
+                                required
+                            />
+                        </Form.Group>
+                        <Form.Group>
+                            <Form.Label>Correo electrónico:</Form.Label>
+                            <Form.Control
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                            />
+                        </Form.Group>
+                        <br />
+                        <hr />
+                        <p>
+                            Selecciona la fecha y hora para la videoconferencia
+                        </p>
+                        <p>
+                            Disponiblidad de lunes a viernes de 2:00 pm a 5:00
+                            pm
+                        </p>
+                        <Form.Group>
+                            <Form.Label>Fecha de contacto:</Form.Label>
+                            <Form.Control
+                                type="datetime-local"
+                                value={date}
+                                onChange={handleDateChange}
+                                required
+                            />
+                        </Form.Group>
+                        <br />
+                        {errorMessage && (
+                            <div className="error-message">{errorMessage}</div>
+                        )}{" "}
+                        {/* Mostrar el mensaje de error */}
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                            }}
+                        >
+                            <Button variant="outline-success" type="submit">
+                                Enviar
+                            </Button>
+                        </div>
+                    </Form>
+                </Modal.Body>
+            </Modal>
+
+            <Notification
+                variant={notification?.variant}
+                message={notification?.message}
+                show={notification !== null}
+                handleClose={() => setNotification(null)}
+            />
+        </>
     );
 };
 

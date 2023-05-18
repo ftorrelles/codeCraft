@@ -9,11 +9,19 @@ const Notification = ({ variant, message, show, handleClose }) => {
                     className="d-inline-block m-1 text-light"
                     bg={variant}
                     show={show}
-                    delay={3000}
+                    delay={5000}
                     onClose={handleClose}
                     autohide
                 >
-                    <Toast.Body className={"text-white"}>{message}</Toast.Body>
+                    <Toast.Body
+                        style={{
+                            textAlign: "center",
+                            fontSize: "18px",
+                        }}
+                        className={"text-white"}
+                    >
+                        {message}
+                    </Toast.Body>
                 </Toast>
             </ToastContainer>
         </div>
