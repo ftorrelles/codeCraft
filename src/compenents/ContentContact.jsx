@@ -56,7 +56,10 @@ const ContentContact = () => {
                                 >
                                     <i className="bx bxl-linkedin"></i>
                                 </a>
-                                <a href="" target="_blank">
+                                <a
+                                    href="https://wa.me/50685775699"
+                                    target="_blank"
+                                >
                                     <i className="bx bxl-whatsapp"></i>
                                 </a>
                                 <a
@@ -78,7 +81,7 @@ const ContentContact = () => {
                                     </span>
                                     <a
                                         style={{ color: "black" }}
-                                        href="https://www.google.com/maps/place/Cra.+53f+%234-10,+Bogot%C3%A1,+Colombia/@4.6191299,-74.1198713,17.25z/data=!4m5!3m4!1s0x8e3f99519274dd35:0x9a2857adcb89ed7b!8m2!3d4.6191373!4d-74.117351?hl=es"
+                                        href=""
                                         target="_blank"
                                     >
                                         Costa Rica
@@ -96,10 +99,10 @@ const ContentContact = () => {
                                     </span>
                                     <a
                                         style={{ color: "black" }}
-                                        href="https://api.whatsapp.com/message/LOR4BMDYHZ3GJ1?autoload=1&app_absent=0"
+                                        href="https://wa.me/50685775699"
                                         target="_blank"
                                     >
-                                        +57 73283782378
+                                        +506 85775699
                                     </a>
                                 </li>
                             </ul>

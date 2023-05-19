@@ -56,7 +56,7 @@ function Footer() {
                             >
                                 <i className="bx bxl-linkedin"></i>
                             </a>
-                            <a href="" target="_blank">
+                            <a href="https://wa.me/50685775699" target="_blank">
                                 <i className="bx bxl-whatsapp"></i>
                             </a>
                             <a

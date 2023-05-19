@@ -13,7 +13,7 @@ const ModalMision = ({ showMision, handleCloseMision }) => {
                 </Modal.Header>
                 <Modal.Body>
                     <p>
-                        En codeCraft nuestra misión es brindar soluciones de
+                        En CodeCraft nuestra misión es brindar soluciones de
                         software de alta calidad y servicios de desarrollo web
                         que satisfagan las necesidades únicas de nuestros
                         clientes. <br />

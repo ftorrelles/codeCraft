@@ -18,7 +18,7 @@ const ContentAbout = () => {
             <Container className="container_about">
                 <Row xs={1} md={2} lg={2}>
                     <Col className="div_info_about" lg={8}>
-                        <h2>sobre nosotros</h2>
+                        <h2>Sobre nosotros</h2>
                         <p>
                             En CodeCraft, somos un equipo joven y dinámico
                             apasionado por la tecnología y la creatividad. Nos
