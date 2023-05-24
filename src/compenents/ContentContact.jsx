@@ -57,7 +57,7 @@ const ContentContact = () => {
                                     <i className="bx bxl-linkedin"></i>
                                 </a>
                                 <a
-                                    href="https://wa.me/50685775699"
+                                    href="https://wa.me/50661370027"
                                     target="_blank"
                                 >
                                     <i className="bx bxl-whatsapp"></i>
@@ -102,7 +102,7 @@ const ContentContact = () => {
                                         href="https://wa.me/50685775699"
                                         target="_blank"
                                     >
-                                        +506 85775699
+                                        +506 6137 0027
                                     </a>
                                 </li>
                             </ul>

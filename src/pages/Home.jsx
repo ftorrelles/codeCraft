@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Portfolio from "./Portfolio";
 import Consultancy from "../compenents/Consultancy";
 import ContentAbout from "../compenents/ContentAbout";
-import ContentWhyUs from "../compenents/ContentWhyUs";
+// import ContentWhyUs from "../compenents/ContentWhyUs";
+import ContentWhyUs2 from "../compenents/ContentWhyUs2";
 import ContentServices from "../compenents/ContentServices";
 import ContentContact from "../compenents/ContentContact";
 
@@ -19,7 +20,7 @@ const Home = () => {
                         <picture>
                             <source
                                 media="(min-width: 992px)"
-                                srcSet="/4-2.png"
+                                srcSet="/4-3.png"
                             />
                             <source
                                 media="(max-width: 991px)"
@@ -27,7 +28,7 @@ const Home = () => {
                             />
                             <img
                                 className="d-block w-100"
-                                src="/4-2.png"
+                                src="/4-3.png"
                                 alt="first slide"
                             />
                         </picture>
@@ -45,7 +46,7 @@ const Home = () => {
                         <picture>
                             <source
                                 media="(min-width: 992px)"
-                                srcSet="/3-2.png"
+                                srcSet="/3-3.png"
                             />
                             <source
                                 media="(max-width: 991px)"
@@ -53,7 +54,7 @@ const Home = () => {
                             />
                             <img
                                 className="d-block w-100"
-                                src="/3-2.png"
+                                src="/3-3.png"
                                 alt="Second slide"
                             />
                         </picture>
@@ -69,7 +70,10 @@ const Home = () => {
             </section>
 
             <ContentAbout />
-            <ContentWhyUs />
+
+            {/* <ContentWhyUs /> */}
+            <ContentWhyUs2 />
+
             <ContentServices />
             <Portfolio />
             <Consultancy />

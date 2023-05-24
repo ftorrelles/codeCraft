@@ -37,6 +37,11 @@ h2 {
 }
 
 /* ---- media query----- */
+@media (max-width: 992px) {
+    .container_about {
+        padding-bottom: 2rem;
+    }
+}
 
 /* Estilos para versión de tablet */
 @media (max-width: 768px) {
