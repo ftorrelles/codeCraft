@@ -51,7 +51,7 @@ const ContentContact = () => {
                             <h2 className="titles_contact">Redes sociales</h2>
                             <div className="div_icons_contact">
                                 <a
-                                    href="https://www.linkedin.com/company/escodecraft/about/"
+                                    href="https://www.linkedin.com/company/codecraft-sa/"
                                     target="_blank"
                                 >
                                     <i className="bx bxl-linkedin"></i>

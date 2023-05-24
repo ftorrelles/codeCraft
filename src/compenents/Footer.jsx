@@ -149,7 +149,7 @@ function Footer() {
                         <h3 style={{ textAlign: "center" }}>Redes sociales</h3>
                         <div className="div_icons_contact">
                             <a
-                                href="https://www.linkedin.com/company/escodecraft/about/"
+                                href="https://www.linkedin.com/company/codecraft-sa/"
                                 target="_blank"
                             >
                                 <i className="bx bxl-linkedin"></i>
