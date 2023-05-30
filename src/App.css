@@ -26,6 +26,25 @@ img {
     max-width: 100%;
 }
 /* -------- */
+/* icono whatsapp */
+.bxl-whatsapp-square {
+    color: #25d366;
+    font-size: 6rem;
+}
+.floating-logo {
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 20px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
 
 /* -- Navbar -- */
 .navBar {

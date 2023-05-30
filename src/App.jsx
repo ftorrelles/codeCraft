@@ -26,6 +26,19 @@ function App() {
                     <Route path="/team" element={<Team />} />
                     <Route path="/testimonials" element={<Testimonials />} />
                 </Routes>
+                <div
+                    className="floating-logo"
+                    style={{
+                        position: "fixed",
+                        bottom: "1rem",
+                        right: "1rem",
+                        zIndex: "9999",
+                    }}
+                >
+                    <a href="https://wa.me/50685775699" target="_blank">
+                        <i className="bx bxl-whatsapp-square"></i>
+                    </a>
+                </div>
                 <Footer />
             </div>
         </HashRouter>
