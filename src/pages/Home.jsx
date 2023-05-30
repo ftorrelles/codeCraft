@@ -20,15 +20,15 @@ const Home = () => {
                         <picture>
                             <source
                                 media="(min-width: 992px)"
-                                srcSet="/4-3.png"
+                                srcSet="/home3-desk.png"
                             />
                             <source
                                 media="(max-width: 991px)"
-                                srcSet="/1.png"
+                                srcSet="/home3-mob.png"
                             />
                             <img
                                 className="d-block w-100"
-                                src="/4-3.png"
+                                src="/home3-desk.png"
                                 alt="first slide"
                             />
                         </picture>
@@ -46,15 +46,15 @@ const Home = () => {
                         <picture>
                             <source
                                 media="(min-width: 992px)"
-                                srcSet="/3-3.png"
+                                srcSet="/home2-desk.png"
                             />
                             <source
                                 media="(max-width: 991px)"
-                                srcSet="/2.png"
+                                srcSet="/home2-mob.png"
                             />
                             <img
                                 className="d-block w-100"
-                                src="/3-3.png"
+                                src="/home2-desk.png"
                                 alt="Second slide"
                             />
                         </picture>

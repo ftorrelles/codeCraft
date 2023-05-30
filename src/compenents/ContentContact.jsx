@@ -91,7 +91,7 @@ const ContentContact = () => {
                                     <span style={{ color: "#1c4c96" }}>
                                         Email:{" "}
                                     </span>
-                                    codecraft@gmail.com
+                                    info@escodecraft.com
                                 </li>
                                 <li>
                                     <span style={{ color: "#1c4c96" }}>

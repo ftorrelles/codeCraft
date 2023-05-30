@@ -18,7 +18,7 @@ const projects = [
         title: "Friend Shop app",
         image: "/friend_shop.png",
         description: `Plantilla Tienda virtual (eCommerce) de artículos de tecnología y del hogar.`,
-        technology: "Construido en React.js",
+        technology: "Construido en React.js y en node.js",
         available: "Haz click acá para verlo",
         link: "https://friend-shop-app.netlify.app/",
     },
