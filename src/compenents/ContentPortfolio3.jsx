@@ -7,6 +7,22 @@ import { Container } from "react-bootstrap";
 
 const projects = [
     {
+        title: "caffe Crunch",
+        image: "/plantilla.png",
+        description: `Pagina web estatica, plantilla empresa galletas`,
+        technology: "Construido en React.js",
+        available: "Haz click acá para verlo",
+        link: "https://plantilla1-codecraft.netlify.app/",
+    },
+    {
+        title: "Portafolio",
+        image: "/ejpotfolio.png",
+        description: `Pagina web estatica, portafolio personal`,
+        technology: "Construido en React.js",
+        available: "Haz click acá para verlo",
+        link: "https://my-portfolio-ft.netlify.app/",
+    },
+    {
         title: "Biupoll",
         image: "/biupoll.png",
         description: `Pagina web estatica, empresa investigación de mercado.`,
