@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap";
 const projects = [
     {
         title: "caffe Crunch",
-        image: "/plantilla.png",
+        image: "/plantilla1.png",
         description: `Pagina web estatica, plantilla empresa galletas`,
         technology: "Construido en React.js",
         available: "Haz click acá para verlo",
@@ -16,7 +16,7 @@ const projects = [
     },
     {
         title: "Portafolio",
-        image: "/ejpotfolio.png",
+        image: "/ejportfolio.png",
         description: `Pagina web estatica, portafolio personal`,
         technology: "Construido en React.js",
         available: "Haz click acá para verlo",
