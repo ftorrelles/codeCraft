@@ -75,9 +75,6 @@ img {
 
 .contact {
     padding: 2rem;
-    background-image: url("/Contact2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .col_contactInfo {
     padding: 1rem;

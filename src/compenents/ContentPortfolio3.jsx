@@ -7,6 +7,14 @@ import { Container } from "react-bootstrap";
 
 const projects = [
     {
+        title: "Vivir Chevere",
+        image: "/vivirchevere.png",
+        description: `software integral de control empresarial.`,
+        technology: "construido en React.js y en Node.js",
+        available: "Haz click acá para verlo",
+        link: "https://vivirchevere.com/",
+    },
+    {
         title: "caffe Crunch",
         image: "/plantilla1.png",
         description: `Pagina web estatica, plantilla empresa galletas`,
@@ -46,14 +54,6 @@ const projects = [
         technology: "Construido en React.js",
         available: "Haz click acá para verlo",
         link: "https://pokedex-ft.netlify.app/",
-    },
-    {
-        title: "CRUD de inventario",
-        image: "/crud.png",
-        description: "Ejemplo inventario, tienda de productos.",
-        technology: "Construido en React.js",
-        available: "Haz click acá para verlo",
-        link: "https://crud-products-ft.netlify.app/",
     },
     {
         title: "Betho's",

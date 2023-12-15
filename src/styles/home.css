@@ -23,22 +23,6 @@
 
 .text-container {
     color: var(--eggshell);
-    /* color: var(--navi-blue); */
-    /* background-color: rgba(255, 255, 255, 0.568); */
-    /* clip-path: polygon(
-        50% 0%,
-        82% 0%,
-        100% 18%,
-        100% 50%,
-        100% 82%,
-        82% 100%,
-        50% 100%,
-        18% 100%,
-        0% 82%,
-        0% 50%,
-        0% 18%,
-        18% 0%
-    ); */
     position: absolute;
     top: 50%;
     right: 10rem;
@@ -46,10 +30,6 @@
     text-align: center;
     padding: 2rem;
     width: 40%;
-    /* margin-right: 2rem;
-    border: 2px solid transparent;
-    box-shadow: 0 0 0 2px white;
-    animation: border-glow 2s linear infinite; */
 }
 
 .home .carousel-inner .carousel-item {
@@ -65,45 +45,3 @@
         padding: 1.5rem;
     }
 }
-
-/* Animación del borde */
-/* .text-container:after {
-    clip-path: polygon(
-        50% 0%,
-        82% 0%,
-        100% 18%,
-        100% 50%,
-        100% 82%,
-        82% 100%,
-        50% 100%,
-        18% 100%,
-        0% 82%,
-        0% 50%,
-        0% 18%,
-        18% 0%
-    );
-    content: "";
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
-    background: linear-gradient(
-        to left,
-        #ffffffc7,
-        #ffffffc7 40%,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(255, 255, 255, 0)
-    );
-    background-size: 30rem 30rem;
-    background-position: 0 0;
-    animation: border-light 3s linear infinite;
-}
-
-@keyframes border-light {
-    to {
-        background-position: 30rem 0;
-    }
-} */
