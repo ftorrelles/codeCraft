@@ -16,6 +16,11 @@ const servicesData = [
             "Son páginas web que pueden cambiar su contenido en función de la interacción del usuario o de la información que se recopila en tiempo real.",
     },
     {
+        title: "Software de gestión empresarial",
+        description:
+            "Software empresarial a medida para un control eficiente. Gestión de inventario, almacenes, etc. Optimiza procesos y toma decisiones informadas.",
+    },
+    {
         title: "Páginas web de comercio electrónico",
         description:
             "Son páginas web que permiten la compra y venta de productos y servicios en línea.",
@@ -24,11 +29,6 @@ const servicesData = [
         title: "Páginas web de blogs",
         description:
             "Son páginas web que contienen artículos y publicaciones escritas por una o varias personas, sobre diversos temas.",
-    },
-    {
-        title: "Páginas web educativas",
-        description:
-            "Son páginas web que ofrecen información y recursos educativos para estudiantes, maestros y otros profesionales de la educación.",
     },
 ];
 

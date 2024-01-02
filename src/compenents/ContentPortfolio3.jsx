@@ -7,7 +7,7 @@ import { Container } from "react-bootstrap";
 
 const projects = [
     {
-        title: "Vivir Chevere",
+        title: "Software de gestión empresarial",
         image: "/vivirchevere.png",
         description: `software integral de control empresarial.`,
         technology: "construido en React.js y en Node.js",
@@ -15,7 +15,7 @@ const projects = [
         link: "https://vivirchevere.com/",
     },
     {
-        title: "caffe Crunch",
+        title: "Página web estática",
         image: "/plantilla1.png",
         description: `Pagina web estatica, plantilla empresa galletas`,
         technology: "Construido en React.js",
@@ -31,7 +31,7 @@ const projects = [
         link: "https://my-portfolio-ft.netlify.app/",
     },
     {
-        title: "Biupoll",
+        title: "Página web estática",
         image: "/biupoll.png",
         description: `Pagina web estatica, empresa investigación de mercado.`,
         technology: "Construido en React.js",
@@ -39,7 +39,7 @@ const projects = [
         link: "https://www.biupoll.com.co/",
     },
     {
-        title: "Friend Shop app",
+        title: "Ejemplo tienda virtual",
         image: "/friend_shop.png",
         description: `Plantilla Tienda virtual (eCommerce) de artículos de tecnología y del hogar.`,
         technology: "Construido en React.js y en node.js",
@@ -47,7 +47,7 @@ const projects = [
         link: "https://friend-shop-app.netlify.app/",
     },
     {
-        title: "Pokédex",
+        title: "Página web de blog",
         image: "/pokedex.png",
         description:
             "App para los fanáticos de Pokemon, en la cual pueden buscar información de sus pokémons favoritos.",
@@ -56,7 +56,7 @@ const projects = [
         link: "https://pokedex-ft.netlify.app/",
     },
     {
-        title: "Betho's",
+        title: "Páginas web dinámicas",
         image: "/betho.png",
         description: "App para mostrar diferentes tipos de cócteles",
         technology: "Construido en React.js",
@@ -64,7 +64,7 @@ const projects = [
         link: "https://cocktails-ft.netlify.app/",
     },
     {
-        title: "Carrito de compra",
+        title: "Ejemplo tienda virtual",
         image: "/tienda_ropa.png",
         description: "Plantilla tienda virtual de ropa",
         technology: "Construido en html, css, y javaScript",

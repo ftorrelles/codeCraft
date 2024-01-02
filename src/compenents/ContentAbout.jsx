@@ -60,11 +60,7 @@ const ContentAbout = () => {
                     </Col>
                     <Col lg={4}>
                         <div className="div_img_about">
-                            <img
-                                src="/about.png"
-                                alt="sobre nosotros"
-                                className="floating-img"
-                            />
+                            <img src="/about2.png" alt="sobre nosotros" />
                         </div>
                     </Col>
                 </Row>

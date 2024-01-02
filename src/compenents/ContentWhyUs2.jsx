@@ -15,21 +15,21 @@ const whyUs = [
                 titleOption: "Paquete básico",
                 descritionOption:
                     "Con este paquete podrás escoger entre plantillas pre-hechas en react.js y en WordPress",
-                url: "/plantilla3.png",
+                url: "/basicPackage.png",
                 color: "radial-gradient(circle, #2d7d9c, #0f1626)",
             },
             {
                 titleOption: "Paquete tetris",
                 descritionOption:
                     "Tus escoges entre una variedad de modelos las secciones para tu página.",
-                url: "/secciones.png",
+                url: "/choseSection.png",
                 color: "radial-gradient(circle, #2d7d9c, #0f1626)",
             },
             {
                 titleOption: "Paquete personalizado",
                 descritionOption:
                     "Creamos las secciones que imagines, con los detalles que solicites.",
-                url: "/creamos.png",
+                url: "/createSection.png",
                 color: "radial-gradient(circle, #2d7d9c, #0f1626)",
             },
         ],
@@ -43,21 +43,21 @@ const whyUs = [
                 titleOption: "Mantenimiento Básico",
                 descritionOption:
                     "El plan básico incluye: cambios semanales en las secciones ya creadas (paletas de colores, letras, imágenes, etc), soporte temas de hosting, dominios etc.",
-                url: "/mantenimiento4.png",
+                url: "/basicMaintenance.png",
                 color: "radial-gradient(circle, #d3d1d1, #7a7979)",
             },
             {
                 titleOption: "Mantenimiento dinámico",
                 descritionOption:
                     "El plan incluye todo el mantenimiento básico, adicional podrás agregar secciones nuevas en la página.",
-                url: "/mantenimiento5.png",
+                url: "/dynamicMaintenance.png",
                 color: "radial-gradient(circle, #d3d1d1, #7a7979)",
             },
             {
                 titleOption: "Paquete funcionalidades",
                 descritionOption:
                     "Según evoluciones, queremos que tu página evolucione contigo; agregamos las funcionalidades que necesites en el camino.",
-                url: "/funcionalidades.png",
+                url: "/functionalityMaintenance.png",
                 color: "radial-gradient(circle, #d3d1d1, #7a7979)",
             },
         ],
@@ -71,14 +71,14 @@ const whyUs = [
                 titleOption: "Cambios deseados por garantía de satisfacción",
                 descritionOption:
                     "Si no estás satisfecho con el resultado final, trabajaremos contigo para hacer las correcciones necesarias y asegurar tu satisfacción. Valido en los primeros 3 días después de estar en producción.",
-                url: "/satisfaccion.png",
+                url: "/satisfactionGuarantee.png",
                 color: "radial-gradient(circle,  #0f1626,#2d7d9c)",
             },
             {
                 titleOption: "Descuentos increíbles por referidos",
                 descritionOption:
                     "Podrás obtener descuentos en la creación de tu sitio web o en el mantenimiento de tu página.",
-                url: "/descuentos.png",
+                url: "/discount.png",
                 color: "radial-gradient(circle,  #0f1626,#2d7d9c)",
             },
         ],
