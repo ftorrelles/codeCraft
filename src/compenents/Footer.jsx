@@ -34,7 +34,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link to="/services">
-                                        Páginas web educativas
+                                        Software de gestión empresarial
                                     </Link>
                                 </li>
                             </ul>
